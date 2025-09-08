@@ -12,3 +12,5 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 'https://static.vecteezy.com/ti/vetor-gratis/p1/20121494-html-arquivo-icone-projeto-gratis-vetor.jpg');
