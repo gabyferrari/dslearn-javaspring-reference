@@ -22,4 +22,7 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Fórum', 'Tire suas dúvidas', 2, 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives Bônus', 'Lives exclusivas para a turma', 3, 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 0, 1);
 
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo Um', 'Neste capítulo vamos começar', 1, 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo Dois', 'Neste capítulo vamos continuar', 2, 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo Três', 'Neste capítulo vamos finalizar', 3, 'https://static-assets.codecademy.com/assets/course-landing-page/meta/1x1/learn-html.jpg', 1, 2);
 
