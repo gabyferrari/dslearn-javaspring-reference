@@ -1,6 +1,8 @@
 package com.devsuperior.dslearn.entities;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
@@ -13,6 +15,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -38,6 +41,12 @@ public abstract class Lesson {
 					   @JoinColumn(name = "offer_id")
 			   })
 	private Set<Enrollment> enrollmentsDone = new HashSet<>();
+	
+	@OneToMany(mappedBy = "lesson")
+	private List<Deliver> deliveries = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "lesson")
+	private List<Deliver> topics = new ArrayList<>();
 	
 	public Lesson() {
 		
@@ -84,6 +93,14 @@ public abstract class Lesson {
 
 	public Set<Enrollment> getEnrollmentsDone() {
 		return enrollmentsDone;
+	}
+
+	public List<Deliver> getDeliveries() {
+		return deliveries;
+	}
+
+	public List<Deliver> getTopics() {
+		return topics;
 	}
 
 	@Override
